@@ -19,24 +19,19 @@ function win(userChoice,computerChoice) {
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
-	const smallUserWord = "user".fontsize(3).sup();
-	const smallCompWord = "comp".fontsize(3).sup();
-	result_p.innerHTML = userChoice + smallUserWord + " beats " + computerChoice + smallCompWord + ". You win!";
+	result_p.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
+	result_p.innerHTML = userChoice.style.color = "blue";
 }
 
 function lose(userChoice,computerChoice) {
 	computerScore++;
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
-	const smallUserWord = "user".fontsize(3).sup();
-	const smallCompWord = "comp".fontsize(3).sup();
-	result_p.innerHTML = userChoice + smallUserWord + " loses to " + computerChoice + smallCompWord + ". You lost!";
+	result_p.innerHTML = userChoice + " loses to " + computerChoice + ". You lost!";
 }
 
 function draw(userChoice,computerChoice) {
-	const smallUserWord = "user".fontsize(3).sup();
-	const smallCompWord = "comp".fontsize(3).sup();
-	result_p.innerHTML = userChoice + smallUserWord + " equals " + computerChoice + smallCompWord + ". It's a draw.";
+	result_p.innerHTML = userChoice + " equals " + computerChoice + ". It's a draw.";
 }
 
 function game(userChoice) {
