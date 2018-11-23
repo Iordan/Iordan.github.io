@@ -20,7 +20,6 @@ function win(userChoice,computerChoice) {
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
-	result_p.innerHTML = userChoice.style.color = "blue";
 }
 
 function lose(userChoice,computerChoice) {
